@@ -2,8 +2,11 @@ package subtask2
 
 class Abbreviation {
 
-    // TODO: Complete the following function
     fun abbreviationFromA(a: String, b: String): String {
-        throw NotImplementedError("Not implemented")
+        var c: String = ""
+        for (i in a) {if (b.contains(i.toUpperCase())) {c = c.plus(i.toUpperCase())}}
+        return if (b.equals(c)) "YES" else "NO"
     }
 }
+
+
